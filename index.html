@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <meta charset="UTF-8">
+    <title>Premier projet site web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <style>
-        body {
+      body {
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
             background-color: #f5f5f5;
@@ -16,7 +19,7 @@
             justify-content: space-between;
             align-items: center;
         }
-        .container{
+        .logo{
             display: grid;
             grid-template-colums:repeat(3 1fr);
             grid-gap: 10px;
@@ -48,21 +51,9 @@
         a:hover{
             color: #ff3c00;
         }
-        .sa{
-            padding: 20px;
-            background: linear-gradient(black);
-            background-size: cover;
-            background-position: center;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
         .hero{
             height: 90vh;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('f.jpg');
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('kotrana.jpg');
             background-size: cover;
             background-position: center;
             color: white;
@@ -70,6 +61,11 @@
             flex-direction: column;
             justify-content: center;
             text-align: center;
+        }
+        h3{
+            text-align: center;
+            color: black;
+            
         }
         .hero h1{
             font-size: 3rem;
@@ -82,39 +78,57 @@
             text-decoration: none;
             margin-top: 20px;
         }
-         </style>
-    <meta charset="UTF-8">
-    <title>Nos site Fitness Park</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    .btn-retour {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: 500;
+      color: white;
+      background-color: #374151;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+        footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #111;
+      color: white;
+      margin-top: 30px;
+    }  
+    </style> 
 </head>
 <body>
-    <header>
-       <div class="container">
+   <header>
+           <div class="logo">
            <div class="item"><button><img src="logo.jpg" alt="description"></button></div>
        </div>
-       <marquee><h1>Bienvenue dans nos site Fitness Park👋👋</h1></marquee>
-    </header>
-    <nav>
-           <a href="a propos.html">Accueil</a>
-           <a href="accueil.html">A propos</a>
-           <a href="programmes.html">Programmes</a>
-           <a href="conseils.html">Conseils</a>
-           <a href="coach.html">Coach</a>
-           <a href="contact.html">Contact</a>
-       </nav>
-       <section id="a propos" class="sa">
-           <h3>Bienvenue dans nos site Fitness Park☺️☺️</h3>
-           <h4>Dans nos site on trois développeurs<br>
-           ✓RANDIMBISOA Jyliana<br>
-           ✓RAZANAJAONA Vololonirina Bienvenue Sandra<br>
-           ✓RASOAMAHEFAMANANA Vololontsoa Fanantenana<br>
-           </h4>
-       </section>
-       <section id="accueil"class="hero">
-          <h2>Mes cher(e)s camarades, vous êtes bienvenue sur nos site Fitness Park.</h2> 
-          <p>Fitness Park est un site dédié au sport, à la santé et au bien-être.
-          Ici, tu trouveras des exercices simples et conseils pour rester en forme.👌👌</p>
-          <a href="contact.html" class="btn">S'inscrire maintenant</a>
-       </section>
-      </body>
- </html>
+           </div>
+           <marquee><h2>BIENVENUE CHEZ FITNESS PARK👋👋</h2></marquee>
+           </header>
+           <nav>
+               <a href="index.html">ACCUEIL</a>
+               <a href="programmes.html">PROGRAMME</a>
+               <a href="a propos.html">À PROPOS</a>
+               <a href="coach.html">COACH</a>
+               <a href="contact.html">CONTACT</a>
+           </nav>
+    <section id="accueil"class="hero">
+          <h2>Mes cher(e)s camarades, vous êtes bienvenue sur nos site Fitness Park.</h2>
+           <p>Fitness Park est un site dédié au sport, à la santé et au bien-être</p>
+           <a href="programmes.html" class="btn">DÉCOUVRIR NOTRE PROGRAMME</a>
+       </div>
+   </section>
+   <h3>Fitness Park est une site dédié au sport, à la santé et au bien-être.        Ici, tu trouveras des exercices simples et conseils pour rester en forme.</h3>
+   
+</body>
+<footer>
+  <p>© 2026 Fitness Park Madagascar 🇲🇬</p>
+</footer>
+
+</html>

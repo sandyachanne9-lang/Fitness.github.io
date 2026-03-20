@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <meta charset="UTF-8">
+    <title>Premier projet site web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <style>
-        body {
+      body {
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
             background-color: #f5f5f5;
@@ -16,7 +19,7 @@
             justify-content: space-between;
             align-items: center;
         }
-        .container{
+        .logo{
             display: grid;
             grid-template-colums:repeat(3 1fr);
             grid-gap: 10px;
@@ -48,41 +51,231 @@
         a:hover{
             color: #ff3c00;
         }
-        .sa{
-            padding: 20px;
-            background: linear-gradient(black);
-            background-size: cover;
-            background-position: center;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-      </style>
-       <meta charset="UTF-8">
-    <title>Nos site Fitness Park</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
+          /* Header de la section */
+  .about-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 500px;
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.45)),
+  url('lanja.jpg') center/cover no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+  
+  .hero-content {
+  max-width: 900px;
+  padding: 0 20px;
+  }
+  
+  .hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.7);
+  }
+  
+  .hero-content p {
+  font-size: 1.35rem;
+  max-width: 720px;
+  margin: 0 auto;
+  opacity: 0.95;
+  }
+  
+  /* Contenu principal */
+  .about-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+  
+  h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 1.2rem;
+  color: #d62828;
+  }
+  
+  .subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  /* Cartes valeurs */
+  .values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 90px;
+  }
+  
+  .value-card {
+  background: white;
+  padding: 40px 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: all 0.35s;
+  }
+  
+  .value-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.14);
+  }
+  
+  .value-card i {
+  font-size: 3.2rem;
+  color: #d62828;
+  margin-bottom: 20px;
+  }
+  
+  .value-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #111;
+  }
+  
+  /* Équipe */
+  .team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 35px;
+  }
+  
+  .team-member {
+  text-align: center;
+  }
+  
+  .team-member img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  }
+  
+  .team-member h4 {
+  font-size: 1.35rem;
+  margin-bottom: 6px;
+  }
+  
+  .team-member .role {
+  color: #d62828;
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  }
+  
+  .cta-final {
+  text-align: center;
+  margin-top: 100px;
+  padding: 60px 20px;
+  background: #111;
+  color: white;
+  border-radius: 16px;
+  }
+  
+  .cta-final h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+  }
+  
+  .btn {
+  display: inline-block;
+  padding: 16px 40px;
+  background: #d62828;
+  color: white;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: bold;
+  border-radius: 50px;
+  margin-top: 20px;
+  transition: all 0.3s;
+  }
+  
+  .btn:hover {
+  background: #b21e1e;
+  transform: translateY(-3px);
+  }
+  
+  @media (max-width: 768px) {
+  .hero-content h1 { font-size: 2.6rem; }
+  .hero-content p  { font-size: 1.15rem; }
+  h2 { font-size: 2.2rem; }
+  }
+  footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #111;
+      color: white;
+      margin-top: 30px;
+    } 
+  </style>
+  </head>
 <body>
-    <header>
-       <div class="container">
+   <header>
+           <div class="logo">
            <div class="item"><button><img src="logo.jpg" alt="description"></button></div>
        </div>
-       <marquee><h1>Bienvenue dans nos site Fitness Park👋👋</h1></marquee>
-    </header>
-    <nav>
-           <a href="a propos.html">Accueil</a>
-           <a href="accueil.html">A propos</a>
-           <a href="programmes.html">Programmes</a>
-           <a href="conseils.html">Conseils</a>
-           <a href="coach.html">Coach</a>
-           <a href="contact.html">Contact</a>
-       </nav>
-       <section id="a propos" class="sa">
-           <h3>Bienvenue dans nos site Fitness Park☺️☺️</h3>
-           <h4>Dans nos site on trois développeurs<br>
-           ✓RANDIMBISOA Jyliana<br>
-           ✓RAZANAJAONA Vololonirina Bienvenue Sandra<br>
-           ✓RASOAMAHEFAMANANA Vololontsoa Fanantenana<br>
+           </div>
+           <marquee><h2>BIENVENUE CHEZ FITNESS PARK👋👋</h2></marquee>
+           </header>
+           <nav>
+               <a href="index.html">ACCUEIL</a>
+               <a href="programmes.html">PROGRAMME</a>
+               <a href="a propos.html">À PROPOS</a>
+               <a href="coach.html">COACH</a>
+               <a href="contact.html">CONTACT</a>
+           </nav>
+           <body>
+  
+  <section class="about-hero">
+  <div class="hero-content">
+  <h1>Fitness Park</h1>
+  <p>On ne vous vend pas un abonnement… on vous aide à devenir la meilleure version de vous-même.</p>
+  </div>
+  </section>
+  
+  <section class="about-section">
+  <h2>Notre histoire</h2>
+  <p class="subtitle">
+  C'est déjà plusieurs années qu'on a créer, Fitness Park est née d’une conviction: 
+  le sport doit rester humain, motivant et accessible. Aujourd’hui, plus de 1200 membres nous font confiance chaque semaine.
+  </p>
+  
+  <h2>Nos valeurs</h2>
+  <div class="values-grid">
+  <div class="value-card">
+  <i class="fas fa-heartbeat"></i>
+  <h3>Santé avant tout</h3>
+  <p>Progression intelligente, écoute du corps, zéro blessure inutile.</p>
+  </div>
+  <div class="value-card">
+  <i class="fas fa-users"></i>
+  <h3>Communauté</h3>
+  <p>Personne n’avance seul ici. On sue, on rit et on progresse ensemble.</p>
+  </div>
+  <div class="value-card">
+  <i class="fas fa-trophy"></i>
+  <h3>Exigence</h3>
+  <p>On ne vous promet pas de miracle, on vous donne les outils et l’accompagnement.</p>
+  </div>
+  </div>
+  <div class="cta-final">
+  <h2>Prêt à changer ?</h2>
+  <p>On commence par un essai gratuit sans engagement.</p>
+  <a href="contact.html" class="btn">Réserver mon essai gratuit</a>
+  </div>
+  </section>
+  
+  </body>
+  <footer>
+  <p>© 2026 Fitness Park Madagascar 🇲🇬</p>
+</footer>
+  </html>
